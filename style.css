@@ -1,0 +1,270 @@
+@import url("/fonts/Alef-Regular.ttf");
+
+:root{ /* 0 1 0 */
+    --main-color: #313131; /* 0 1 0 */
+    --active-color: #00A9E0; /* 0 1 0 */
+}
+
+body{ /* 0 0 1 */
+    background: #F5F5F5; /* 0 0 1 */
+    font-family: Roboto, sans-serif; /* 0 0 1 */
+    font-style: normal; /* 0 0 1 */
+    margin: 0; /* 0 0 1 */
+}
+
+.navbar-logo { /* 0 1 0 */
+    display: inline-block; /* 0 1 0 */
+}
+
+ul.menu-main { /* 0 1 0 */
+    list-style: none; /* 0 1 0 */
+    margin: 0; /* 0 1 0 */
+    padding: 0; /* 0 1 0 */
+    float: right; /* 0 1 0 */
+    text-align: center; /* 0 1 0 */
+}
+
+.top-menu { /* 0 1 0 */
+    box-shadow: 0 3px 10px rgba(64, 63, 63, 0.2); /* 0 1 0 */
+    padding: 30px 10%; /* 0 1 0 */
+    height: 60px; /* 0 1 0 */
+    display: flex; /* 0 1 0 */
+    align-items: center; /* 0 1 0 */
+}
+
+.menu-main a:hover:before { /* 0 3 1 */
+    opacity: 1;
+}
+
+@media (max-width: 660px) {
+    .menu-main {
+        float: none;
+        padding-top: 20px;
+    }
+    .top-menu {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .menu-main a {padding: 0 10px;}
+    .menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+    .menu-main li {display: block;}
+}
+
+.border-line{ /* 0 1 0 */
+    border-left: 1px solid var(--main-color); /* 0 1 0 */
+    height: 20px; /* 0 1 0 */
+}
+
+.embryo-logo{ /* 0 1 0 */
+    text-decoration: none; /* 0 1 0 */
+    display: flex; /* 0 1 0 */
+    height: 50px; /* 0 1 0 */
+    align-items: center; /* 0 1 0 */
+}
+
+.embryo-icon{ /* 0 1 0 */
+    height: 50px; /* 0 1 0 */
+}
+
+.embryo-name{ /* 0 1 0 */
+    color: #666666; /* 0 1 0 */
+    font-size: 30px; /* 0 1 0 */
+    font-family: Roboto, sans-serif; /* 0 1 0 */
+    padding-left: 20px; /* 0 1 0 */
+}
+
+.navigation-list{ /* 0 1 0 */
+    list-style: none; /* 0 1 0 */
+    margin: 0; /* 0 1 0 */
+    padding-left: 0; /* 0 1 0 */
+}
+
+.navigation-element{ /* 0 1 0 */
+    display: inline-block; /* 0 1 0 */
+}
+
+.article-title{ /* 0 1 0 */
+    position: relative; /* 0 1 0 */
+    width: 100%; /* 0 1 0 */
+}
+
+.article-header-text{ /* 0 1 0 */
+    color: var(--main-color); /* 0 1 0 */
+    text-transform: uppercase; /* 0 1 0 */
+    font-size: 52px; /* 0 1 0 */
+    font-family: AlefRegular, sans-serif; /* 0 1 0 */
+    margin-top: 75px; /* 0 1 0 */
+    margin-bottom: 0; /* 0 1 0 */
+}
+
+.article-header-line{ /* 0 1 0 */
+    border-top: 2px solid var(--main-color); /* 0 1 0 */
+    height: 100%; /* 0 1 0 */
+}
+
+.cells{ /* 0 1 0 */
+    background-size: cover; /* 0 1 0 */
+    background-image: url("images/EmbryoInBlackAndWhite.jpg"); /* 0 1 0 */
+    background-position: center; /* 0 1 0 */
+    width: auto; /* 0 1 0 */
+    height: 600px; /* 0 1 0 */
+}
+
+.article-text{ /* 0 1 0 */
+    padding: 50px 25px 0 25px; /* 0 1 0 */
+    margin: 0; /* 0 1 0 */
+    font-size: 24px; /* 0 1 0 */
+    font-family: Roboto, sans-serif; /* 0 1 0 */
+}
+
+.discussion{
+    padding-bottom: 100px;
+}
+
+.menu-main li { /* 0 1 1 */
+    display: inline-block; /* 0 1 1 */
+}
+
+.menu-main a { /* 0 1 1 */
+    text-decoration: none; /* 0 1 1 */
+    display: block; /* 0 1 1 */
+    position: relative; /* 0 1 1 */
+    line-height: 60px; /* 0 1 1 */
+    padding-left: 20px; /* 0 1 1 */
+    padding-right: 20px; /* 0 1 1 */
+    font-size: 18px; /* 0 1 1 */
+    letter-spacing: 1px; /* 0 1 1 */
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif; /* 0 1 1 */
+    color: var(--main-color); /* 0 1 1 */
+    transition:.3s linear; /* 0 1 1 */
+}
+
+.menu-main:last-child:first-child{
+    padding-left: 0;
+}
+
+#active-button { /* 1 0 0 */
+    color: var(--active-color); /* 1 0 0 */
+}
+
+h2.title-text{ /* 0 1 1 */
+    margin-left: 8%; /* 0 1 1 */
+    position: absolute; /* 0 1 1 */
+    bottom: 25%; /* 0 1 1 */
+    width: 90%; /* 0 1 1 */
+}
+
+h2.tutorial{ /* 0 1 1 */
+    bottom: 38%; /* 0 1 1 */
+}
+
+span.title{ /* 0 1 1 */
+    color: var(--main-color); /* 0 1 1 */
+    text-transform: uppercase; /* 0 1 1 */
+    font-size: 52px; /* 0 1 1 */
+    font-family: AlefRegular, sans-serif; /* 0 1 1 */
+    padding: 1px 2%; /* 0 1 1 */
+
+}
+
+.text{ /* 0 1 0 */
+    width: 80%; /* 0 1 0 */
+    margin: 0 auto; /* 0 1 0 */
+}
+
+.article-header{ /* 0 1 0 */
+    margin: 0 auto; /* 0 1 0 */
+    height: 71px; /* 0 1 0 */
+}
+
+.top-menu:after { /* 0 2 0 */
+    content: ""; /* 0 2 0 */
+    display: table; /* 0 2 0 */
+    clear: both; /* 0 2 0 */
+}
+
+.article-header:nth-child(2){ /* 0 2 0 */
+    float: right; /* 0 2 0 */
+    line-height: 71px; /* 0 2 0 */
+}
+
+span.first-line{ /* 0 1 1 */
+    background: #CCEEF9; /* 0 1 1 */
+}
+
+span.second-line{ /* 0 1 1 */
+    background: #A6E1F4; /* 0 1 1 */
+}
+
+span.third-line{ /* 0 1 1 */
+    background: #59C7EB; /* 0 1 1 */
+}
+
+span.fourth-line{ /* 0 1 1 */
+    background: #00A9E0; /* 0 1 1 */
+}
+
+.github{ /* 0 1 0 */
+    margin-top: 50px; /* 0 1 0 */
+}
+
+.github-button, .pdf-button{ /* 0 1 0 */
+    margin-left: 25px;
+    padding: 15px; /* 0 1 0 */
+    font-family: Roboto, sans-serif; /* 0 1 0 */
+    font-size: 32px; /* 0 1 0 */
+    color: var(--main-color); /* 0 1 0 */
+    border: 2px solid var(--main-color); /* 0 1 0 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* 0 1 0 */
+    border-radius: 10px; /* 0 1 0 */
+    margin-bottom: 40px; /* 0 1 0 */
+}
+
+footer{ /* 0 0 1 */
+    position: absolute; /* 0 0 1 */
+    height: 170px; /* 0 0 1 */
+    box-shadow: 0 -3px 10px rgba(64, 63, 63, 0.2); /* 0 0 1 */
+    width: 100%; /* 0 0 1 */
+    float: left;
+}
+
+.footer-aria{ /* 0 1 0 */
+    margin: 30px 10%; /* 0 1 0 */
+}
+
+.rights{
+    float: left;
+    width: 50%;
+}
+
+.social{
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.social a > img{
+    padding-left: 70px;
+}
+
+.social div{
+    float: right;
+}
+
+.about, .contact-us{
+    text-decoration: none; /* 0 1 1 */
+    display: block; /* 0 1 1 */
+    position: relative; /* 0 1 1 */
+    color: var(--main-color); /* 0 1 1 */
+    transition:.3s linear; /* 0 1 1 */
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.about, .contact-us, .rights-text{
+    font-size: 18px;
+}
+
