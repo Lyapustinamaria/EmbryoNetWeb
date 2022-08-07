@@ -1,4 +1,35 @@
 @import url("/fonts/Alef-Regular.ttf");
+@import url("/fonts/Alef-Bold.ttf");
+@import url("/fonts/HelveticaBold.otf");
+@import url("/fonts/HelveticaRegular.otf");
+
+@font-face {
+    font-family: "AlefRegular";
+    src: url("/fonts/Alef-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AlefBold";
+    src: url("/fonts/Alef-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("/fonts/HelveticaRegular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("/fonts/HelveticaBold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 :root{ /* 0 1 0 */
     --main-color: #313131; /* 0 1 0 */
@@ -12,6 +43,10 @@ body{ /* 0 0 1 */
     margin: 0; /* 0 0 1 */
 }
 
+p{
+    text-align: justify;
+}
+
 .navbar-logo { /* 0 1 0 */
     display: inline-block; /* 0 1 0 */
 }
@@ -21,7 +56,8 @@ ul.menu-main { /* 0 1 0 */
     margin: 0; /* 0 1 0 */
     padding: 0; /* 0 1 0 */
     float: right; /* 0 1 0 */
-    text-align: center; /* 0 1 0 */
+    text-align: right; /* 0 1 0 */
+    width: 80%;
 }
 
 .top-menu { /* 0 1 0 */
@@ -62,6 +98,8 @@ ul.menu-main { /* 0 1 0 */
     display: flex; /* 0 1 0 */
     height: 50px; /* 0 1 0 */
     align-items: center; /* 0 1 0 */
+    float: left;
+    width: 20%;
 }
 
 .embryo-icon{ /* 0 1 0 */
@@ -119,6 +157,14 @@ ul.menu-main { /* 0 1 0 */
 .cells.in-color{ /* 0 1 0 */
     background-size: cover; /* 0 1 0 */
     background-image: url("images/EmbryoInColor.jpg"); /* 0 1 0 */
+    background-position: center; /* 0 1 0 */
+    width: auto; /* 0 1 0 */
+    height: 600px; /* 0 1 0 */
+}
+
+.cells.emboss{
+    background-size: cover; /* 0 1 0 */
+    background-image: url("images/EmbryoEmboss.jpg"); /* 0 1 0 */
     background-position: center; /* 0 1 0 */
     width: auto; /* 0 1 0 */
     height: 600px; /* 0 1 0 */
@@ -220,7 +266,7 @@ span.fourth-line{ /* 0 1 1 */
 }
 .application-circle{
     margin: 50px auto;
-    width: 58%;
+    width: 70%;
 }
 
 div.drug{
@@ -256,9 +302,8 @@ div.first-line.text:last-child{
 }
 
 .plate{
-    height: 386px;
-    width: 606px;
-    padding-right: 100px;
+    width: 45%;
+    padding-right: 4%;
 }
 
 .plate:last-child{
@@ -275,7 +320,7 @@ div.first-line.text:last-child{
 
 .application-images{
     margin: 0 auto;
-    width: 87%;
+    width: 90%;
 }
 
 .github{ /* 0 1 0 */
@@ -294,6 +339,78 @@ div.first-line.text:last-child{
     margin-bottom: 40px; /* 0 1 0 */
 }
 
+.contact-title{
+    color: var(--active-color);
+    font-family: AlefRegular, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 50px 10%;
+}
+
+.konstanz{
+    margin: 0 10% 100px 10%;
+    height: 200px;
+}
+
+.image-konstanz{
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-right: 50px;
+}
+
+.cvs-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-cvs{
+    padding-top: 60px;
+}
+
+.contact-konstanz{
+    padding-top: 29px;
+}
+
+.contact-regular{
+    font-family: HelveticaRegular, sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    color: var(--main-color);
+}
+
+.contact-website{
+    padding-top: 15px;
+}
+
+span.contact-regular{
+    padding-left: 15px;
+}
+
+span.contact-regular:first-child{
+    padding-left: 0;
+}
+
+.contact-link{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.contact-link img{
+    position: absolute;
+    height: 24px;
+}
+
+.contact-link span{
+    padding-left: 30px;
+}
+
+.contact-bold{
+    font-family: HelveticaBold, sans-serif;
+    font-size: 20px;
+}
+
 footer{ /* 0 0 1 */
     position: absolute; /* 0 0 1 */
     height: 170px; /* 0 0 1 */
@@ -309,6 +426,10 @@ footer{ /* 0 0 1 */
 .rights{
     float: left;
     width: 50%;
+}
+
+#rights-text{
+    text-align: left;
 }
 
 .social{
