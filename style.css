@@ -424,6 +424,20 @@ span.contact-regular:first-child{
     font-size: 20px;
 }
 
+.legal-disclosure{
+    margin: 0 10%;
+    font-family: HelveticaRegular, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 0 20px 0;
+    color: var(--main-color);
+}
+
+.legal-disclosure.header{
+    font-family: HelveticaBold, sans-serif;
+    font-size: 20px;
+}
+
 footer{ /* 0 0 1 */
     position: absolute; /* 0 0 1 */
     height: 170px; /* 0 0 1 */
