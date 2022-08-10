@@ -264,63 +264,76 @@ span.third-line{ /* 0 1 1 */
 span.fourth-line{ /* 0 1 1 */
     background: #00A9E0; /* 0 1 1 */
 }
-.application-circle{
-    margin: 50px auto;
-    width: 70%;
-}
 
-div.drug{
+/*.application-circle{*/
+/*    margin: 50px auto;*/
+/*    width: 70%;*/
+/*}*/
+
+/*div.drug{*/
+/*    align-items: center;*/
+/*    padding-bottom: 30px;*/
+/*}*/
+
+/*div.drug:last-child{*/
+/*    padding-bottom: 0;*/
+/*}*/
+
+/*div.first-line{*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+/*.circle{*/
+/*    border: 1px solid #000000;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 0.175em 0.175em 0 0 rgba(15, 28, 63, 0.125);*/
+/*    height: 50px;*/
+/*    width: 50px;*/
+/*}*/
+
+/*div.first-line.text{*/
+/*    width: 80px;*/
+/*    padding-right: 160px;*/
+/*    padding-left: 40px;*/
+/*}*/
+
+/*div.first-line.text:last-child{*/
+/*    padding-right: 0;*/
+/*}*/
+
+/*.plate{*/
+/*    width: 45%;*/
+/*    padding-right: 4%;*/
+/*}*/
+
+/*.plate:last-child{*/
+/*    padding-right: 0;*/
+/*}*/
+
+/*.drug-images{*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*.drug-images:last-child{*/
+/*    margin-bottom: 100px;*/
+/*}*/
+
+/*.application-images{*/
+/*    margin: 0 auto;*/
+/*    width: 90%;*/
+/*}*/
+
+.video{
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 
-div.drug:last-child{
-    padding-bottom: 0;
-}
-
-div.first-line{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.circle{
-    border: 1px solid #000000;
-    border-radius: 50%;
-    box-shadow: 0.175em 0.175em 0 0 rgba(15, 28, 63, 0.125);
-    height: 50px;
-    width: 50px;
-}
-
-div.first-line.text{
-    width: 80px;
-    padding-right: 160px;
-    padding-left: 40px;
-}
-
-div.first-line.text:last-child{
-    padding-right: 0;
-}
-
-.plate{
-    width: 45%;
-    padding-right: 4%;
-}
-
-.plate:last-child{
-    padding-right: 0;
-}
-
-.drug-images{
-    margin-bottom: 50px;
-}
-
-.drug-images:last-child{
-    margin-bottom: 100px;
-}
-
-.application-images{
-    margin: 0 auto;
-    width: 90%;
+.videos{
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
 .github{ /* 0 1 0 */
