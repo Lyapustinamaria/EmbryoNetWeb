@@ -350,6 +350,12 @@ span.fourth-line{ /* 0 1 1 */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* 0 1 0 */
     border-radius: 10px; /* 0 1 0 */
     margin-bottom: 40px; /* 0 1 0 */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.github-button:hover{
+    background-color: #E5E5E5;
 }
 
 .contact-title{
