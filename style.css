@@ -455,22 +455,28 @@ footer{ /* 0 0 1 */
     width: 50%;
 }
 
-#rights-text{
-    text-align: left;
+p.copyright{
+    font-size: 18px;
+    color: var(--main-color);
+    position: absolute;
+    margin-top: 65px;
+    width: 50%;
 }
 
 .social{
     float: right;
     width: 50%;
     margin-top: 20px;
-}
-
-.social a > img{
-    padding-left: 70px;
+    align-items: center;
 }
 
 .social div{
     float: right;
+    padding-left: 50px;
+}
+
+.social a > img{
+    padding-top: 5px;
 }
 
 .about, .contact-us{
@@ -479,11 +485,8 @@ footer{ /* 0 0 1 */
     position: relative; /* 0 1 1 */
     color: var(--main-color); /* 0 1 1 */
     transition:.3s linear; /* 0 1 1 */
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     text-align: right;
-}
-
-.about, .contact-us, .rights-text{
     font-size: 18px;
 }
 
