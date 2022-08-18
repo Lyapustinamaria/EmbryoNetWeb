@@ -170,15 +170,18 @@ ul.menu-main { /* 0 1 0 */
     height: 600px; /* 0 1 0 */
 }
 
-.article-text{ /* 0 1 0 */
-    padding: 50px 25px 0 25px; /* 0 1 0 */
+.article-text-home{
+    padding-top: 100px; /* 0 1 0 */
     margin: 0; /* 0 1 0 */
     font-size: 24px; /* 0 1 0 */
     font-family: Roboto, sans-serif; /* 0 1 0 */
 }
 
-.discussion{
-    padding-bottom: 100px;
+.article-text{ /* 0 1 0 */
+    padding: 50px 25px 50px 25px; /* 0 1 0 */
+    margin: 0; /* 0 1 0 */
+    font-size: 24px; /* 0 1 0 */
+    font-family: Roboto, sans-serif; /* 0 1 0 */
 }
 
 .menu-main li { /* 0 1 1 */
@@ -333,7 +336,10 @@ span.fourth-line{ /* 0 1 1 */
 
 .videos{
     margin-top: 40px;
-    margin-bottom: 70px;
+}
+
+.video:last-child{
+    padding-bottom: 0;
 }
 
 .github{ /* 0 1 0 */
@@ -341,7 +347,6 @@ span.fourth-line{ /* 0 1 1 */
 }
 
 .github-button, .pdf-button{ /* 0 1 0 */
-    margin-left: 25px;
     padding: 15px; /* 0 1 0 */
     font-family: Roboto, sans-serif; /* 0 1 0 */
     font-size: 32px; /* 0 1 0 */
@@ -349,7 +354,6 @@ span.fourth-line{ /* 0 1 1 */
     border: 2px solid var(--main-color); /* 0 1 0 */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* 0 1 0 */
     border-radius: 10px; /* 0 1 0 */
-    margin-bottom: 40px; /* 0 1 0 */
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -450,6 +454,7 @@ footer{ /* 0 0 1 */
     box-shadow: 0 -3px 10px rgba(64, 63, 63, 0.2); /* 0 0 1 */
     width: 100%; /* 0 0 1 */
     float: left;
+    margin-top: 100px;
 }
 
 .footer-aria{ /* 0 1 0 */
