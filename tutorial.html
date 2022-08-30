@@ -60,21 +60,83 @@
             <div class="article-header">
                 <div class="article-header-2">
                     <h2 class="article-header-text">
-                        Discussion
+                        How to compile EmbryoNet tools
                     </h2>
                 </div>
                 <div class="article-header-line"> </div>
             </div>
-            <p class="article-text">
-                The automated phenotyping tool that we developed – EmbryoNet – is based on convolutional neural networks.
-                Strikingly, EmbryoNet outcompetes human assessors in terms of speed, accuracy and sensitivity for the phenotypic classification of the major signaling pathways in early vertebrate development,
-                and it can also classify incomplete penetrance of phenotypes. EmbryoNet can be adapted to other species separated by hundreds of million years in evolution, enabling the analysis of high-dimensional phenomic data across taxa.
-                In a proof-of-concept drug screen with two drug libraries, we showed that EmbryoNet faithfully recovered compounds of known function and non-toxic treatments. This approach will likely enable the association of currently used medications with previously unknown signaling pathways,
-                opening up the possibility to apply well-characterized compounds in new therapeutic contexts and applications.<br>
-                <br>
-                We provide EmbryoNet as open-source software, with python packages, a GitHub repository and GUIs for labeling data and phenotype classification.
-                We also provide the imaging data from training, testing and the drug screen as resource to the community. Due to the modular open-source nature, EmbryoNet can be easily adapted to a variety of purposes, including structures such as amphibian embryos and organoids, where automated phenotyping will expedite biological and pharmaceutical discovery.<br>
+            <p class="article-text tutorial">
+                How to build EmbryoClassifier
             </p>
+            <ol>
+                <li class="instruction">
+                    Use this
+                    <a class="github-link" href="https://github.com/mueller-lab/EmbryoNet/tree/main/GUI" target="_blank">
+                        Github project
+                    </a>
+                </li>
+                <li class="instruction">
+                    Install CMake
+                </li>
+                <li class="instruction">
+                    Install Visial Studio 2019
+                </li>
+                <li class="instruction">
+                    Download dependencies
+                </li>
+                <li class="instruction">
+                    Open command line (cmd) and run dependencies/scripts/prepare_env.bat
+                </li>
+                <li class="instruction">
+                    In command that (4) command line write "cmake-gui"
+                </li>
+                <li class="instruction">
+                    Specify where the source code is
+                </li>
+                <li class="instruction">
+                    Specify where to build binaries
+                </li>
+                <li class="instruction">
+                    Press Configure
+                </li>
+                <li class="instruction">
+                    Press Generate
+                </li>
+                <li class="instruction">
+                    Open Project in Microsoft Visual Studio 2019
+                </li>
+                <li class="instruction">
+                    Right click on "Solution in "Embryo_classifier" and "Build solution"
+                </li>
+            </ol>
+            <p class="article-text build">
+                Starting from (5) you can alternatively continue in command line with activated environment
+            </p>
+            <ol>
+                <li class="instruction">
+                    cd 'GUI path'
+                </li>
+                <li class="instruction">
+                    mkdir build && cd build
+                </li>
+                <li class="instruction">
+                    cmake .. -G"Visual Studio 16 2019" -A x64
+                </li>
+                <li class="instruction">
+                    Open Project in Microsoft Visual Studio 2019
+                </li>
+                <li class="instruction">
+                    Right click on "Solution in "Embryo_classifier" and "Build solution"
+                </li>
+            </ol>
+            <p class="article-text build">
+                You can see how to build EmbryoClassifier in the video
+            </p>
+            <div class="video">
+                <video width="800" height="500" controls="controls">
+                    <source src="videos/Tutorial.mp4">
+                </video>
+            </div>
         </div>
         <footer>
             <div class="footer-aria">

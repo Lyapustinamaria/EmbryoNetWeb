@@ -175,6 +175,7 @@ ul.menu-main { /* 0 1 0 */
     margin: 0; /* 0 1 0 */
     font-size: 24px; /* 0 1 0 */
     font-family: Roboto, sans-serif; /* 0 1 0 */
+    color: var(--main-color);
 }
 
 .article-text{ /* 0 1 0 */
@@ -182,6 +183,15 @@ ul.menu-main { /* 0 1 0 */
     margin: 0; /* 0 1 0 */
     font-size: 24px; /* 0 1 0 */
     font-family: Roboto, sans-serif; /* 0 1 0 */
+    color: var(--main-color);
+}
+
+.article-text.tutorial{
+    padding-bottom: 15px;
+}
+
+.article-text.build{
+    padding: 20px 25px 15px 25px;
 }
 
 .menu-main li { /* 0 1 1 */
@@ -340,6 +350,10 @@ span.fourth-line{ /* 0 1 1 */
 
 .video:last-child{
     padding-bottom: 0;
+}
+
+.github-link{
+    color: var(--main-color);
 }
 
 .github{ /* 0 1 0 */
@@ -501,3 +515,64 @@ p.copyright{
     font-size: 18px;
 }
 
+ol {
+    counter-reset:myCounter;
+    padding-left: 50px;
+    color: var(--main-color);
+}
+
+li.instruction {
+    position: relative;
+    padding-left: 3em;
+    margin: 0.45em 0;
+    list-style: none;
+    line-height: 1.8em;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+li.instruction:hover {
+    color: #666666;
+}
+
+li.instruction:before {
+    content:counter(myCounter);
+    counter-increment:myCounter;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding:0px;
+    color: #F5F5F5;
+    background:#2980b9;
+    font-weight:bold;
+    text-align:center;
+    border-radius: .9em;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: HelveticaRegular, sans-serif;
+}
+
+li.instruction:hover:before {
+    background-color: #666666;
+}
+
+li.instruction:after {
+    position: absolute;
+    top: 2.1em;
+    left: 0.9em;
+    width: 2px;
+    height: calc(100% - 2em);
+    content: '';
+    background-color: rgb(203, 203, 203);
+    z-index: 0;
+}
+
+li.instruction:hover:after {
+    background-color: #666666;
+}
